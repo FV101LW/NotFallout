@@ -1,37 +1,113 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2f2f2f;
-    color: white;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+    background-color: #d3e1e0; /* Soft pastel background */
+    color: #2f2f2f; /* Dark gray text */
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
+/* Game Container Styling */
 .game-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #333;
-    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f8f8f8; /* Off-white, clean background */
+    padding: 30px;
     border-radius: 10px;
+    border: 5px solid #6e4b3e; /* Brownish border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
-button {
-    background-color: #555;
+/* Title */
+h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #6e4b3e;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Game Status Text (Stats and Story) */
+#game-status p {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace; /* Monospace for a typewriter feel */
+    line-height: 1.5;
+    color: #2f2f2f;
+}
+
+/* Game Options (Buttons) */
+#game-options button {
+    background-color: #ffbc00; /* Retro yellow button color */
     border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
+    padding: 15px 30px;
+    margin: 15px;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 5px #666, 0 -2px 5px rgba(0,0,0,0.1); /* 3D button effect */
+    transition: background-color 0.3s, box-shadow 0.2s;
 }
 
-button:hover {
-    background-color: #777;
+/* Button Hover Effect */
+#game-options button:hover {
+    background-color: #e1a800; /* Darker yellow on hover */
+    box-shadow: 0 10px #444, 0 -5px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
-#game-status {
+/* Stats and Story Formatting */
+#stats {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff9c4; /* Light yellow for stats box */
+    padding: 10px;
     margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
-#game-options button {
-    display: inline-block;
+/* Story Text Area */
+#story-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
+    background-color: #f1f1f1; /* Slightly gray background */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #6e4b3e; /* Border for story text */
+    font-size: 18px;
+    line-height: 1.5;
 }
+
+/* Button Container */
+#game-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Retro Button Style for Game Actions */
+button {
+    font-family: 'Press Start 2P', cursive; /* Retro console-style font */
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    background-color: #ff9800; /* Warm, vintage orange */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #f57c00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Fonts for Retro Feel */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rock+Salt&display=swap');
